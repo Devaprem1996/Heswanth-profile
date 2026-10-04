@@ -22,6 +22,8 @@ export const StudentPortrait: React.FC<StudentPortraitProps> = ({
   useEffect(() => {
     if (!photoUrl) {
       const candidatePaths = [
+        '/image/Heshwanth.png',
+        '/Heshwanth.png',
         '/Smiling Schoolboy in Yellow Uniform.png',
         '/smiling-schoolboy.png',
         '/heswanth.png',
