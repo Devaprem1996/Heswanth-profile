@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fredoka', 'Outfit', sans-serif;
+  }
+
+  .font-handwriting {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+  }
+}
+
+/* Playful Doodle & Sticker Shadows */
+.sticker-shadow {
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.9));
+}
+
+.sticker-shadow-sm {
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.9));
+}
+
+.sticker-shadow-lg {
+  filter: drop-shadow(4px 6px 0px rgba(0, 0, 0, 0.9));
+}
+
+.sticker-shadow-color {
+  filter: drop-shadow(4px 5px 0px #1e293b);
+}
+
+.card-doodle-border {
+  border: 2.5px solid #1e293b;
+  box-shadow: 4px 4px 0px #1e293b;
+}
+
+.card-doodle-border-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-doodle-border-hover:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 6px 7px 0px #1e293b;
+}
+
+/* Scalloped / Wavy ribbon cutouts */
+.ribbon-doodle {
+  position: relative;
+  border: 2px solid #1e293b;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
